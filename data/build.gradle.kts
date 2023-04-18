@@ -1,19 +1,23 @@
 plugins {
-    kotlin("js")
+    kotlin("multiplatform")
     kotlin("plugin.serialization")
-}
-
-dependencies {
-    implementation(kotlin("stdlib-js"))
-    api(Deps.Kotlin.serialization)
 }
 
 kotlin {
     js(IR) {
         binaries.executable()
-        browser {
-            distribution {
-                directory = File("$rootDir/build/distributions/")
+        browser {}
+    }
+
+    sourceSets {
+        named("commonMain") {
+            dependencies {
+                implementation(Deps.Kotlin.serialization)
+            }
+        }
+        named("jsMain") {
+            dependencies {
+                implementation(kotlin("stdlib-js"))
             }
         }
     }
