@@ -2,7 +2,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.pixelperfect.tellme.data.Message
+import com.example.template.data.Message
 import kotlinx.browser.document
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString

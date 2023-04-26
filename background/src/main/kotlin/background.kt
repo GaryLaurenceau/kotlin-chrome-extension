@@ -1,4 +1,4 @@
-import com.pixelperfect.tellme.data.Message
+import com.example.template.data.Message
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json

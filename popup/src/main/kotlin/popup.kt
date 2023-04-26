@@ -9,7 +9,7 @@ import kotlinx.serialization.json.Json
 import org.jetbrains.compose.web.dom.Button
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.renderComposable
-import com.pixelperfect.tellme.data.Message
+import com.example.template.data.Message
 
 fun main() {
     renderComposable("root") {

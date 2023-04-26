@@ -1,4 +1,4 @@
-package com.pixelperfect.tellme.data
+package com.example.template.data
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
